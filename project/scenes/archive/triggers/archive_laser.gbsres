@@ -1,0 +1,146 @@
+{
+  "_resourceType": "trigger",
+  "id": "0fc5a541-7a0b-52fa-9be6-fe788dbbc913",
+  "_index": 0,
+  "symbol": "trigger_archive_laser",
+  "prefabId": "",
+  "name": "Archive laser",
+  "x": 8,
+  "y": 13,
+  "width": 4,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "d418ab30-1000-4000-8000-000000000089",
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "0"
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000090",
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "beep",
+        "pitch": 1,
+        "duration": 0.12,
+        "wait": false
+      }
+    },
+    {
+      "id": "07138a95-cc69-45af-b59b-9e13f03ff092",
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "                    ",
+        "x": 0,
+        "y": 0,
+        "location": "background"
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000091",
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "HP:$00$   CORE:$01$/3",
+        "x": 1,
+        "y": 0,
+        "location": "background"
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000096",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000092",
+            "command": "EVENT_TIMER_DISABLE",
+            "args": {
+              "timer": 1
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000093",
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "d418ab20-1000-4000-8000-000000000007",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "direction": "up",
+              "fadeSpeed": 2
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000094",
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "units": "tiles"
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000095",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "SUIT BREACH!\nOne shield lost.\nB: status",
+              "closeButton": "a",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "00febb96-fa0d-4c42-9a48-288493522f2e",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "                    ",
+              "x": 0,
+              "y": 0,
+              "location": "background"
+            }
+          },
+          {
+            "id": "0232b7b1-a24a-4f87-bd9e-1a85b4439ebb",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "HP:$00$   CORE:$01$/3",
+              "x": 1,
+              "y": 0,
+              "location": "background"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "leaveScript": []
+}

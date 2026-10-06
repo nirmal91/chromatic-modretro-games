@@ -1,0 +1,130 @@
+{
+  "_resourceType": "trigger",
+  "id": "902f59ba-2729-51c4-beec-2bf95bced93c",
+  "_index": 2,
+  "symbol": "trigger_reactor_core_2",
+  "prefabId": "",
+  "name": "Reactor core 2",
+  "x": 15,
+  "y": 5,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "d418ab30-1000-4000-8000-000000000077",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "5"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000071",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "5",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000072",
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "1"
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000073",
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "beep",
+              "pitch": 6,
+              "duration": 0.12,
+              "wait": false
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000074",
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "keep",
+              "palette1": "keep",
+              "palette2": "midnight-dim",
+              "palette3": "keep",
+              "palette4": "keep",
+              "palette5": "keep",
+              "palette6": "keep",
+              "palette7": "keep"
+            }
+          },
+          {
+            "id": "bad2a0d4-7b24-4822-b077-19d10e25f4e0",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "                    ",
+              "x": 0,
+              "y": 0,
+              "location": "background"
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000075",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "HP:$00$   CORE:$01$/3",
+              "x": 1,
+              "y": 0,
+              "location": "background"
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000076",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "CORE 2 SECURED.\nArchive is next.",
+              "closeButton": "a",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "65ed2cdb-b038-4df7-bd48-c6798a4dfd80",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "                    ",
+              "x": 0,
+              "y": 0,
+              "location": "background"
+            }
+          },
+          {
+            "id": "dec68df5-91b1-4aa6-951b-186ac5c3b13e",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "HP:$00$   CORE:$01$/3",
+              "x": 1,
+              "y": 0,
+              "location": "background"
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "leaveScript": []
+}

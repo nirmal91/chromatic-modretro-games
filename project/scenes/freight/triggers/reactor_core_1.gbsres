@@ -1,0 +1,130 @@
+{
+  "_resourceType": "trigger",
+  "id": "16710cc8-f21c-5225-9c94-d4bce1e0d467",
+  "_index": 0,
+  "symbol": "trigger_reactor_core_1",
+  "prefabId": "",
+  "name": "Reactor core 1",
+  "x": 15,
+  "y": 5,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "d418ab30-1000-4000-8000-000000000032",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "3"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000026",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "3",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000027",
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "1"
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000028",
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "beep",
+              "pitch": 6,
+              "duration": 0.12,
+              "wait": false
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000029",
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "keep",
+              "palette1": "keep",
+              "palette2": "midnight-dim",
+              "palette3": "keep",
+              "palette4": "keep",
+              "palette5": "keep",
+              "palette6": "keep",
+              "palette7": "keep"
+            }
+          },
+          {
+            "id": "85442b4f-d21c-4d32-982c-71b708083099",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "                    ",
+              "x": 0,
+              "y": 0,
+              "location": "background"
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000030",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "HP:$00$   CORE:$01$/3",
+              "x": 1,
+              "y": 0,
+              "location": "background"
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000031",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "CORE 1 SECURED.\nFind north lift.",
+              "closeButton": "a",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "ae416e15-e398-4ec5-a944-e154311801e7",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "                    ",
+              "x": 0,
+              "y": 0,
+              "location": "background"
+            }
+          },
+          {
+            "id": "889e3959-23f0-4665-a08c-ebab2a4e842f",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "HP:$00$   CORE:$01$/3",
+              "x": 1,
+              "y": 0,
+              "location": "background"
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "leaveScript": []
+}

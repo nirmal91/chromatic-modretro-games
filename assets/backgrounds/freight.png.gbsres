@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d418ab10-1000-4000-8000-000000000002",
+  "name": "Midnight freight",
+  "symbol": "bg_midnight_freight",
+  "tileColors": "0053+032+00a+022+006+032+00a+022+005f+016+008e+",
+  "filename": "freight.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

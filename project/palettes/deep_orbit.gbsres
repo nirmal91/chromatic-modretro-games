@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "midnight-blue",
+  "name": "Deep orbit",
+  "colors": [
+    "D8FFF0",
+    "57DFC9",
+    "21395F",
+    "080C20"
+  ],
+  "defaultName": "Deep orbit",
+  "defaultColors": [
+    "D8FFF0",
+    "57DFC9",
+    "21395F",
+    "080C20"
+  ]
+}

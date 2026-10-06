@@ -1,0 +1,261 @@
+{
+  "romSha256": "e4db6de38cb6bdc27e61bf8aac6a0b8b8cbde4cc9c81e25dce794a5f6ec9e7fa",
+  "scenarios": 6,
+  "checks": [
+    {
+      "scenario": "delivery",
+      "check": "freight-core-and-secret",
+      "values": {
+        "shields": 3,
+        "cores": 1,
+        "log": 1,
+        "freight": 1,
+        "grid": 0,
+        "relay": 0,
+        "cipher": 0,
+        "seconds": 0,
+        "state": 1
+      }
+    },
+    {
+      "scenario": "delivery",
+      "check": "relay-spawn-grid-still-live",
+      "values": {
+        "shields": 3,
+        "cores": 1,
+        "log": 1,
+        "freight": 1,
+        "grid": 0,
+        "relay": 0,
+        "cipher": 0,
+        "seconds": 0,
+        "state": 2
+      }
+    },
+    {
+      "scenario": "delivery",
+      "check": "relay-switch-disables-beams",
+      "values": {
+        "shields": 3,
+        "cores": 1,
+        "log": 1,
+        "freight": 1,
+        "grid": 1,
+        "relay": 0,
+        "cipher": 0,
+        "seconds": 0,
+        "state": 2
+      }
+    },
+    {
+      "scenario": "delivery",
+      "check": "wrong-cipher-damages-and-resets",
+      "values": {
+        "shields": 2,
+        "cores": 2,
+        "log": 1,
+        "freight": 1,
+        "grid": 1,
+        "relay": 1,
+        "cipher": 0,
+        "seconds": 0,
+        "state": 3
+      }
+    },
+    {
+      "scenario": "delivery",
+      "check": "cipher-complete-escape-started",
+      "values": {
+        "shields": 2,
+        "cores": 3,
+        "log": 1,
+        "freight": 1,
+        "grid": 1,
+        "relay": 1,
+        "cipher": 3,
+        "seconds": 45,
+        "state": 4
+      }
+    },
+    {
+      "scenario": "delivery",
+      "check": "shuttle-win",
+      "values": {
+        "shields": 2,
+        "cores": 3,
+        "log": 1,
+        "freight": 1,
+        "grid": 1,
+        "relay": 1,
+        "cipher": 3,
+        "seconds": 37,
+        "state": 5
+      }
+    },
+    {
+      "scenario": "delivery",
+      "check": "replay-resets-run",
+      "values": {
+        "shields": 3,
+        "cores": 0,
+        "log": 0,
+        "freight": 0,
+        "grid": 0,
+        "relay": 0,
+        "cipher": 0,
+        "seconds": 0,
+        "state": 0
+      }
+    },
+    {
+      "scenario": "delivery",
+      "check": "fresh-title",
+      "values": {
+        "shields": 3,
+        "cores": 0,
+        "log": 0,
+        "freight": 0,
+        "grid": 0,
+        "relay": 0,
+        "cipher": 0,
+        "seconds": 0,
+        "state": 0
+      }
+    },
+    {
+      "scenario": "ghost",
+      "check": "perfect-delivery",
+      "values": {
+        "shields": 3,
+        "cores": 3,
+        "log": 1,
+        "freight": 1,
+        "grid": 1,
+        "relay": 1,
+        "cipher": 3,
+        "seconds": 37,
+        "state": 5
+      }
+    },
+    {
+      "scenario": "ghost",
+      "check": "timer-stopped",
+      "values": {
+        "shields": 3,
+        "cores": 3,
+        "log": 1,
+        "freight": 1,
+        "grid": 1,
+        "relay": 1,
+        "cipher": 3,
+        "seconds": 37,
+        "state": 5
+      }
+    },
+    {
+      "scenario": "timeout",
+      "check": "escape",
+      "values": {
+        "shields": 2,
+        "cores": 3,
+        "log": 1,
+        "freight": 1,
+        "grid": 1,
+        "relay": 1,
+        "cipher": 3,
+        "seconds": 45,
+        "state": 4
+      }
+    },
+    {
+      "scenario": "timeout",
+      "check": "time-expired",
+      "values": {
+        "shields": 2,
+        "cores": 3,
+        "log": 1,
+        "freight": 1,
+        "grid": 1,
+        "relay": 1,
+        "cipher": 3,
+        "seconds": 0,
+        "state": 6
+      }
+    },
+    {
+      "scenario": "timeout",
+      "check": "retry",
+      "values": {
+        "shields": 3,
+        "cores": 0,
+        "log": 0,
+        "freight": 0,
+        "grid": 0,
+        "relay": 0,
+        "cipher": 0,
+        "seconds": 0,
+        "state": 0
+      }
+    },
+    {
+      "scenario": "damage",
+      "check": "zero-shields",
+      "values": {
+        "shields": 0,
+        "cores": 3,
+        "log": 1,
+        "freight": 1,
+        "grid": 1,
+        "relay": 1,
+        "cipher": 3,
+        "seconds": 45,
+        "state": 6
+      }
+    },
+    {
+      "scenario": "live-grid",
+      "check": "grid-is-live",
+      "values": {
+        "shields": 3,
+        "cores": 1,
+        "log": 1,
+        "freight": 1,
+        "grid": 0,
+        "relay": 0,
+        "cipher": 0,
+        "seconds": 0,
+        "state": 2
+      }
+    },
+    {
+      "scenario": "live-grid",
+      "check": "live-beam-hurts",
+      "values": {
+        "shields": 2,
+        "cores": 1,
+        "log": 1,
+        "freight": 1,
+        "grid": 0,
+        "relay": 0,
+        "cipher": 0,
+        "seconds": 0,
+        "state": 2
+      }
+    },
+    {
+      "scenario": "locked-lift",
+      "check": "lift-rejects-missing-core",
+      "values": {
+        "shields": 3,
+        "cores": 1,
+        "log": 1,
+        "freight": 1,
+        "grid": 1,
+        "relay": 0,
+        "cipher": 0,
+        "seconds": 0,
+        "state": 2
+      }
+    }
+  ]
+}

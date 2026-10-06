@@ -1,0 +1,116 @@
+{
+  "_resourceType": "trigger",
+  "id": "2c338ca0-aea1-5741-aea4-bad7aa52f958",
+  "_index": 2,
+  "symbol": "trigger_escape_beam_4",
+  "prefabId": "",
+  "name": "Escape beam 4",
+  "x": 1,
+  "y": 4,
+  "width": 13,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "d418ab30-1000-4000-8000-000000000176",
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "0"
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000177",
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "beep",
+        "pitch": 1,
+        "duration": 0.12,
+        "wait": false
+      }
+    },
+    {
+      "id": "ba532540-e3ef-4c58-8c7e-1d5e609c218b",
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "                    ",
+        "x": 0,
+        "y": 0,
+        "location": "background"
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000178",
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "HP:$00$   TIME:$07$",
+        "x": 1,
+        "y": 0,
+        "location": "background"
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000182",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000179",
+            "command": "EVENT_TIMER_DISABLE",
+            "args": {
+              "timer": 1
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000180",
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "d418ab20-1000-4000-8000-000000000007",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "direction": "up",
+              "fadeSpeed": 2
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000181",
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "units": "tiles"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "leaveScript": []
+}

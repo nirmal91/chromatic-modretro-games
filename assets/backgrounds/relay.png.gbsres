@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d418ab10-1000-4000-8000-000000000003",
+  "name": "Midnight relay",
+  "symbol": "bg_midnight_relay",
+  "tileColors": "005f+022+0012+022+002c+0112+004c+032+0012+032+0053+",
+  "filename": "relay.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

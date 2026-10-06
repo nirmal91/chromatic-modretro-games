@@ -1,0 +1,253 @@
+{
+  "_resourceType": "trigger",
+  "id": "ac89220f-acd6-53bb-b23f-07b37ba18233",
+  "_index": 1,
+  "symbol": "trigger_cipher_moon",
+  "prefabId": "",
+  "name": "Cipher MOON",
+  "x": 9,
+  "y": 7,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "d418ab30-1000-4000-8000-000000000110",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000109",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "6"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000097",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "6",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000098",
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "beep",
+                    "pitch": 5,
+                    "duration": 0.12,
+                    "wait": false
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000099",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "MOON ACCEPTED.\nCipher 1 / 3.",
+                    "closeButton": "a",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                },
+                {
+                  "id": "72a9b1ec-f848-418b-89fc-d18968417313",
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "                    ",
+                    "x": 0,
+                    "y": 0,
+                    "location": "background"
+                  }
+                },
+                {
+                  "id": "07f52e09-a3ef-43db-bf33-9637b4e3638e",
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "HP:$00$   CORE:$01$/3",
+                    "x": 1,
+                    "y": 0,
+                    "location": "background"
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000100",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "6",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000101",
+                  "command": "EVENT_DEC_VALUE",
+                  "args": {
+                    "variable": "0"
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000102",
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "beep",
+                    "pitch": 1,
+                    "duration": 0.12,
+                    "wait": false
+                  }
+                },
+                {
+                  "id": "1cbbbc1d-2299-4056-a738-9ce1c380084d",
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "                    ",
+                    "x": 0,
+                    "y": 0,
+                    "location": "background"
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000103",
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "HP:$00$   CORE:$01$/3",
+                    "x": 1,
+                    "y": 0,
+                    "location": "background"
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000108",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "lte",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "0"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "d418ab30-1000-4000-8000-000000000104",
+                        "command": "EVENT_TIMER_DISABLE",
+                        "args": {
+                          "timer": 1
+                        }
+                      },
+                      {
+                        "id": "d418ab30-1000-4000-8000-000000000105",
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "d418ab20-1000-4000-8000-000000000007",
+                          "x": {
+                            "type": "number",
+                            "value": 2
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 14
+                          },
+                          "direction": "up",
+                          "fadeSpeed": 2
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "d418ab30-1000-4000-8000-000000000106",
+                        "command": "EVENT_ACTOR_SET_POSITION",
+                        "args": {
+                          "actorId": "player",
+                          "x": {
+                            "type": "number",
+                            "value": 2
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 14
+                          },
+                          "units": "tiles"
+                        }
+                      },
+                      {
+                        "id": "d418ab30-1000-4000-8000-000000000107",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "SUIT BREACH!\nOne shield lost.\nB: status",
+                          "closeButton": "a",
+                          "speedIn": 0,
+                          "speedOut": 0
+                        }
+                      },
+                      {
+                        "id": "ad87df17-9429-4641-9b78-9ee2ea47725b",
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "                    ",
+                          "x": 0,
+                          "y": 0,
+                          "location": "background"
+                        }
+                      },
+                      {
+                        "id": "f74cfe90-15f1-4957-a93a-41777afdbf58",
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "HP:$00$   CORE:$01$/3",
+                          "x": 1,
+                          "y": 0,
+                          "location": "background"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "leaveScript": []
+}

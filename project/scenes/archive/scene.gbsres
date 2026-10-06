@@ -1,0 +1,139 @@
+{
+  "_resourceType": "scene",
+  "id": "d418ab20-1000-4000-8000-000000000004",
+  "_index": 3,
+  "type": "TOPDOWN",
+  "name": "ARCHIVE",
+  "symbol": "scene_archive",
+  "x": 720,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "d418ab10-1000-4000-8000-000000000004",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "midnight-blue",
+    "midnight-pink",
+    "midnight-gold",
+    "midnight-violet",
+    "midnight-dim",
+    "default-bg-6",
+    "dmg",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "midnight-player"
+  ],
+  "autoFadeSpeed": 2,
+  "script": [
+    {
+      "id": "d418ab30-1000-4000-8000-000000000082",
+      "command": "EVENT_TIMER_DISABLE",
+      "args": {
+        "timer": 1
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000083",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "8",
+        "value": {
+          "type": "number",
+          "value": 3
+        }
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000084",
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000085",
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 1
+      }
+    },
+    {
+      "id": "7b56e1d5-8383-4bc3-ab87-7044fe26e5f5",
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "                    ",
+        "x": 0,
+        "y": 0,
+        "location": "background"
+      }
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 2
+      },
+      "id": "f2cf4c89-965a-538a-95e6-ac4a6c00d344"
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000086",
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "HP:$00$   CORE:$01$/3",
+        "x": 1,
+        "y": 0,
+        "location": "background"
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000088",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000087",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "ARCHIVE\nStep on consoles\nMOON, SUN, STAR.",
+              "closeButton": "a",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "ac8244ec-dfcd-4940-af6d-fa8510c25dc9",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "                    ",
+              "x": 0,
+              "y": 0,
+              "location": "background"
+            }
+          },
+          {
+            "id": "17bbdb69-f3b9-49e9-964a-8311da90bb76",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "HP:$00$   CORE:$01$/3",
+              "x": 1,
+              "y": 0,
+              "location": "background"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f29+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+004+0f2+006+0f2+004+0f2+004+0f2+006+0f2+004+0f2+004+0f2+006+0f2+004+0f2+0012+0f2+0012+0f15+"
+}

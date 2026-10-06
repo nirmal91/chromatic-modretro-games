@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "midnight-gold",
+  "name": "Reactor amber",
+  "colors": [
+    "FFFFCE",
+    "FFC65A",
+    "996044",
+    "100C28"
+  ],
+  "defaultName": "Reactor amber",
+  "defaultColors": [
+    "FFFFCE",
+    "FFC65A",
+    "996044",
+    "100C28"
+  ]
+}

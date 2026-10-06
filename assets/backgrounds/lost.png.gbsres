@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d418ab10-1000-4000-8000-000000000007",
+  "name": "Midnight lost",
+  "symbol": "bg_midnight_lost",
+  "tileColors": "01168+",
+  "filename": "lost.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

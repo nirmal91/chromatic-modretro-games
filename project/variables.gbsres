@@ -1,0 +1,51 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "Shield integrity",
+      "symbol": "var_shields"
+    },
+    {
+      "id": "1",
+      "name": "Stolen cores",
+      "symbol": "var_cores"
+    },
+    {
+      "id": "2",
+      "name": "Secret flight log",
+      "symbol": "var_log"
+    },
+    {
+      "id": "3",
+      "name": "Freight core taken",
+      "symbol": "var_freight"
+    },
+    {
+      "id": "4",
+      "name": "Grid disabled",
+      "symbol": "var_grid"
+    },
+    {
+      "id": "5",
+      "name": "Relay core taken",
+      "symbol": "var_relay"
+    },
+    {
+      "id": "6",
+      "name": "Cipher step",
+      "symbol": "var_cipher"
+    },
+    {
+      "id": "7",
+      "name": "Escape seconds",
+      "symbol": "var_seconds"
+    },
+    {
+      "id": "8",
+      "name": "Game state",
+      "symbol": "var_state"
+    }
+  ],
+  "constants": []
+}

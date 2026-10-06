@@ -1,0 +1,106 @@
+{
+  "_resourceType": "trigger",
+  "id": "f29cf318-edb6-5ec2-b854-8fced7b073ce",
+  "_index": 1,
+  "symbol": "trigger_hidden_flight_log",
+  "prefabId": "",
+  "name": "Hidden flight log",
+  "x": 3,
+  "y": 5,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "d418ab30-1000-4000-8000-000000000037",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "2"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000033",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "2",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000034",
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "beep",
+              "pitch": 8,
+              "duration": 0.12,
+              "wait": false
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000035",
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "keep",
+              "palette1": "keep",
+              "palette2": "keep",
+              "palette3": "midnight-dim",
+              "palette4": "keep",
+              "palette5": "keep",
+              "palette6": "keep",
+              "palette7": "keep"
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000036",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "SECRET LOG\nThis station was\nbuilt to fail.",
+                "Archive code:\nMOON, SUN, STAR.\nRemember it."
+              ],
+              "closeButton": "a",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "4a298a47-d2f3-4604-a32c-74d9bc32047b",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "                    ",
+              "x": 0,
+              "y": 0,
+              "location": "background"
+            }
+          },
+          {
+            "id": "b246ef2e-e9c5-4d16-9937-258eaeeecb40",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "HP:$00$   CORE:$01$/3",
+              "x": 1,
+              "y": 0,
+              "location": "background"
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "leaveScript": []
+}

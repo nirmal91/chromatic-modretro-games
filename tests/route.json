@@ -1,0 +1,601 @@
+{
+  "initialFrames": 180,
+  "steps": [
+    {
+      "buttons": [
+        "start"
+      ],
+      "frames": 90
+    },
+    {
+      "buttons": [],
+      "frames": 1
+    },
+    {
+      "buttons": [
+        "a"
+      ],
+      "frames": 90
+    },
+    {
+      "buttons": [],
+      "frames": 1
+    },
+    {
+      "buttons": [
+        "a"
+      ],
+      "frames": 90
+    },
+    {
+      "buttons": [],
+      "frames": 1
+    },
+    {
+      "buttons": [
+        "a"
+      ],
+      "frames": 60
+    },
+    {
+      "buttons": [],
+      "frames": 1
+    },
+    {
+      "buttons": [
+        "right"
+      ],
+      "frames": 16
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 72
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "left"
+      ],
+      "frames": 8
+    },
+    {
+      "buttons": [],
+      "frames": 120
+    },
+    {
+      "buttons": [
+        "a"
+      ],
+      "frames": 120
+    },
+    {
+      "buttons": [],
+      "frames": 1
+    },
+    {
+      "buttons": [
+        "a"
+      ],
+      "frames": 120
+    },
+    {
+      "buttons": [],
+      "frames": 1
+    },
+    {
+      "buttons": [
+        "down"
+      ],
+      "frames": 80
+    },
+    {
+      "buttons": [
+        "right"
+      ],
+      "frames": 48
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 56
+    },
+    {
+      "buttons": [
+        "right"
+      ],
+      "frames": 40
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 24
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 8
+    },
+    {
+      "buttons": [],
+      "frames": 120
+    },
+    {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    },
+    {
+      "buttons": [],
+      "frames": 30
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 16
+    },
+    {
+      "buttons": [
+        "left"
+      ],
+      "frames": 48
+    },
+    {
+      "buttons": [],
+      "frames": 60
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 16
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "left"
+      ],
+      "frames": 48
+    },
+    {
+      "buttons": [],
+      "frames": 90
+    },
+    {
+      "buttons": [],
+      "frames": 60
+    },
+    {
+      "buttons": [
+        "down"
+      ],
+      "frames": 16
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "right"
+      ],
+      "frames": 104
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 16
+    },
+    {
+      "buttons": [],
+      "frames": 120
+    },
+    {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    },
+    {
+      "buttons": [],
+      "frames": 30
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 72
+    },
+    {
+      "buttons": [],
+      "frames": 120
+    },
+    {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    },
+    {
+      "buttons": [],
+      "frames": 30
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 24
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "left"
+      ],
+      "frames": 48
+    },
+    {
+      "buttons": [],
+      "frames": 90
+    },
+    {
+      "buttons": [
+        "right"
+      ],
+      "frames": 8
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 64
+    },
+    {
+      "buttons": [],
+      "frames": 120
+    },
+    {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    },
+    {
+      "buttons": [],
+      "frames": 30
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 40
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "right"
+      ],
+      "frames": 56
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 8
+    },
+    {
+      "buttons": [],
+      "frames": 100
+    },
+    {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    },
+    {
+      "buttons": [],
+      "frames": 30
+    },
+    {
+      "buttons": [
+        "down"
+      ],
+      "frames": 16
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "left"
+      ],
+      "frames": 48
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 16
+    },
+    {
+      "buttons": [],
+      "frames": 100
+    },
+    {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    },
+    {
+      "buttons": [],
+      "frames": 30
+    },
+    {
+      "buttons": [
+        "down"
+      ],
+      "frames": 16
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "right"
+      ],
+      "frames": 96
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 16
+    },
+    {
+      "buttons": [],
+      "frames": 120
+    },
+    {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    },
+    {
+      "buttons": [],
+      "frames": 30
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 32
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "left"
+      ],
+      "frames": 48
+    },
+    {
+      "buttons": [],
+      "frames": 120
+    },
+    {
+      "buttons": [
+        "a"
+      ],
+      "frames": 1
+    },
+    {
+      "buttons": [],
+      "frames": 90
+    },
+    {
+      "buttons": [
+        "right"
+      ],
+      "frames": 112
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 32
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "left"
+      ],
+      "frames": 104
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 32
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "right"
+      ],
+      "frames": 104
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "up"
+      ],
+      "frames": 32
+    },
+    {
+      "buttons": [],
+      "frames": 8
+    },
+    {
+      "buttons": [
+        "left"
+      ],
+      "frames": 56
+    },
+    {
+      "buttons": [],
+      "frames": 120
+    },
+    {
+      "buttons": [],
+      "frames": 180
+    },
+    {
+      "buttons": [
+        "start"
+      ],
+      "frames": 90
+    },
+    {
+      "buttons": [],
+      "frames": 90
+    }
+  ],
+  "checkpoints": [
+    {
+      "afterStep": 24,
+      "expect": {
+        "shields": 3,
+        "cores": 1,
+        "log": 1,
+        "state": 1
+      },
+      "name": "freight-core-and-secret"
+    },
+    {
+      "afterStep": 33,
+      "expect": {
+        "shields": 3,
+        "cores": 1,
+        "grid": 0,
+        "state": 2
+      },
+      "name": "relay-spawn-grid-still-live"
+    },
+    {
+      "afterStep": 40,
+      "expect": {
+        "shields": 3,
+        "cores": 1,
+        "grid": 1,
+        "state": 2
+      },
+      "name": "relay-switch-disables-beams"
+    },
+    {
+      "afterStep": 54,
+      "expect": {
+        "shields": 2,
+        "cores": 2,
+        "cipher": 0,
+        "state": 3
+      },
+      "name": "wrong-cipher-damages-and-resets"
+    },
+    {
+      "afterStep": 86,
+      "expect": {
+        "shields": 2,
+        "cores": 3,
+        "cipher": 3,
+        "state": 4
+      },
+      "name": "cipher-complete-escape-started"
+    },
+    {
+      "afterStep": 101,
+      "expect": {
+        "shields": 2,
+        "cores": 3,
+        "log": 1,
+        "state": 5
+      },
+      "name": "shuttle-win"
+    },
+    {
+      "afterStep": 103,
+      "expect": {
+        "shields": 3,
+        "cores": 0,
+        "log": 0,
+        "state": 0
+      },
+      "name": "replay-resets-run"
+    }
+  ],
+  "escapeIndex": 86,
+  "winIndex": 101
+}

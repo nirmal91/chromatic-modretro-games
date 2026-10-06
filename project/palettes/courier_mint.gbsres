@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "midnight-player",
+  "name": "Courier mint",
+  "colors": [
+    "E8FFF0",
+    "78F8C8",
+    "30A898",
+    "080C20"
+  ],
+  "defaultName": "Courier mint",
+  "defaultColors": [
+    "E8FFF0",
+    "78F8C8",
+    "30A898",
+    "080C20"
+  ]
+}

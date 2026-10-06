@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "midnight-violet",
+  "name": "Memory violet",
+  "colors": [
+    "F8D8FF",
+    "AE86F8",
+    "584888",
+    "100C28"
+  ],
+  "defaultName": "Memory violet",
+  "defaultColors": [
+    "F8D8FF",
+    "AE86F8",
+    "584888",
+    "100C28"
+  ]
+}

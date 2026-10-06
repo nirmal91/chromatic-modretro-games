@@ -1,0 +1,294 @@
+{
+  "_resourceType": "trigger",
+  "id": "9763af85-74aa-5d77-96f4-741f0f3cf1ca",
+  "_index": 3,
+  "symbol": "trigger_cipher_star",
+  "prefabId": "",
+  "name": "Cipher STAR",
+  "x": 15,
+  "y": 7,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "d418ab30-1000-4000-8000-000000000141",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000140",
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "6"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000125",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "6",
+                    "value": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000126",
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "beep",
+                    "pitch": 7,
+                    "duration": 0.12,
+                    "wait": false
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000127",
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "1"
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000128",
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "keep",
+                    "palette1": "keep",
+                    "palette2": "keep",
+                    "palette3": "midnight-gold",
+                    "palette4": "keep",
+                    "palette5": "keep",
+                    "palette6": "keep",
+                    "palette7": "keep"
+                  }
+                },
+                {
+                  "id": "7aaf974d-a160-4c49-9344-86c8b3ce54c4",
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "                    ",
+                    "x": 0,
+                    "y": 0,
+                    "location": "background"
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000129",
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "HP:$00$   CORE:$01$/3",
+                    "x": 1,
+                    "y": 0,
+                    "location": "background"
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000130",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": "CORE 3 RELEASED!\nEvacuate now.\nTake north lift.",
+                    "closeButton": "a",
+                    "speedIn": 0,
+                    "speedOut": 0
+                  }
+                },
+                {
+                  "id": "c002e912-35b3-4ed8-912e-c173d6fd6294",
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "                    ",
+                    "x": 0,
+                    "y": 0,
+                    "location": "background"
+                  }
+                },
+                {
+                  "id": "319660f7-6eab-4e4d-9e4d-f3f5314d2900",
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "HP:$00$   CORE:$01$/3",
+                    "x": 1,
+                    "y": 0,
+                    "location": "background"
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000131",
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "6",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000132",
+                  "command": "EVENT_DEC_VALUE",
+                  "args": {
+                    "variable": "0"
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000133",
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "beep",
+                    "pitch": 1,
+                    "duration": 0.12,
+                    "wait": false
+                  }
+                },
+                {
+                  "id": "cd12d4b2-8b31-4b35-b93a-0f3fe6054746",
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "                    ",
+                    "x": 0,
+                    "y": 0,
+                    "location": "background"
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000134",
+                  "command": "EVENT_TEXT_DRAW",
+                  "args": {
+                    "text": "HP:$00$   CORE:$01$/3",
+                    "x": 1,
+                    "y": 0,
+                    "location": "background"
+                  }
+                },
+                {
+                  "id": "d418ab30-1000-4000-8000-000000000139",
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "lte",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "0"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "id": "d418ab30-1000-4000-8000-000000000135",
+                        "command": "EVENT_TIMER_DISABLE",
+                        "args": {
+                          "timer": 1
+                        }
+                      },
+                      {
+                        "id": "d418ab30-1000-4000-8000-000000000136",
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "d418ab20-1000-4000-8000-000000000007",
+                          "x": {
+                            "type": "number",
+                            "value": 2
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 14
+                          },
+                          "direction": "up",
+                          "fadeSpeed": 2
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "d418ab30-1000-4000-8000-000000000137",
+                        "command": "EVENT_ACTOR_SET_POSITION",
+                        "args": {
+                          "actorId": "player",
+                          "x": {
+                            "type": "number",
+                            "value": 2
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 14
+                          },
+                          "units": "tiles"
+                        }
+                      },
+                      {
+                        "id": "d418ab30-1000-4000-8000-000000000138",
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": "SUIT BREACH!\nOne shield lost.\nB: status",
+                          "closeButton": "a",
+                          "speedIn": 0,
+                          "speedOut": 0
+                        }
+                      },
+                      {
+                        "id": "cde707ed-b1a8-4efd-a24b-cd6e00f52057",
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "                    ",
+                          "x": 0,
+                          "y": 0,
+                          "location": "background"
+                        }
+                      },
+                      {
+                        "id": "02fd5e4f-09aa-4f16-9941-c516c31d38bb",
+                        "command": "EVENT_TEXT_DRAW",
+                        "args": {
+                          "text": "HP:$00$   CORE:$01$/3",
+                          "x": 1,
+                          "y": 0,
+                          "location": "background"
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "leaveScript": []
+}

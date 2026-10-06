@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "midnight-dim",
+  "name": "Powered down",
+  "colors": [
+    "6CA8B0",
+    "386478",
+    "21394A",
+    "080C20"
+  ],
+  "defaultName": "Powered down",
+  "defaultColors": [
+    "6CA8B0",
+    "386478",
+    "21394A",
+    "080C20"
+  ]
+}

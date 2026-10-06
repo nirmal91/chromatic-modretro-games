@@ -1,0 +1,103 @@
+{
+  "_resourceType": "trigger",
+  "id": "af9b7775-40c3-5c98-88a6-234fda885124",
+  "_index": 0,
+  "symbol": "trigger_grid_control_console",
+  "prefabId": "",
+  "name": "Grid control console",
+  "x": 15,
+  "y": 13,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "d418ab30-1000-4000-8000-000000000061",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "4"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000057",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "4",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000058",
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "beep",
+              "pitch": 7,
+              "duration": 0.12,
+              "wait": false
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000059",
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "keep",
+              "palette1": "midnight-dim",
+              "palette2": "keep",
+              "palette3": "keep",
+              "palette4": "keep",
+              "palette5": "keep",
+              "palette6": "keep",
+              "palette7": "keep"
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000060",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "GRID OFFLINE.\nBeams are safe.\nFind gold core.",
+              "closeButton": "a",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "39eb3ab1-d737-4001-abf7-fa3748e67bf9",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "                    ",
+              "x": 0,
+              "y": 0,
+              "location": "background"
+            }
+          },
+          {
+            "id": "7ad96a0d-9863-4015-956c-8ace1febc792",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "HP:$00$   CORE:$01$/3",
+              "x": 1,
+              "y": 0,
+              "location": "background"
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "leaveScript": []
+}

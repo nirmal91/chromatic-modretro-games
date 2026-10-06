@@ -1,0 +1,192 @@
+{
+  "_resourceType": "scene",
+  "id": "d418ab20-1000-4000-8000-000000000002",
+  "_index": 1,
+  "type": "TOPDOWN",
+  "name": "FREIGHT",
+  "symbol": "scene_freight",
+  "x": 240,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "d418ab10-1000-4000-8000-000000000002",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "midnight-blue",
+    "midnight-pink",
+    "midnight-gold",
+    "midnight-violet",
+    "midnight-dim",
+    "default-bg-6",
+    "dmg",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "midnight-player"
+  ],
+  "autoFadeSpeed": 2,
+  "script": [
+    {
+      "id": "d418ab30-1000-4000-8000-000000000017",
+      "command": "EVENT_TIMER_DISABLE",
+      "args": {
+        "timer": 1
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000018",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "8",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000019",
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000020",
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 1
+      }
+    },
+    {
+      "id": "5a78c2ac-027d-4188-b349-996c6159f5f3",
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "                    ",
+        "x": 0,
+        "y": 0,
+        "location": "background"
+      }
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 2
+      },
+      "id": "8ec64d34-ffeb-53d2-8160-5c65e78143e9"
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000021",
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "HP:$00$   CORE:$01$/3",
+        "x": 1,
+        "y": 0,
+        "location": "background"
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000023",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000022",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "FREIGHT\nGold: core\nPurple: log",
+              "closeButton": "a",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "e92b9743-5952-4f5d-9958-c62ef7bd271d",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "                    ",
+              "x": 0,
+              "y": 0,
+              "location": "background"
+            }
+          },
+          {
+            "id": "5a464853-28d3-4678-b2ae-0f274cea24b9",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "HP:$00$   CORE:$01$/3",
+              "x": 1,
+              "y": 0,
+              "location": "background"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000024",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "STEAL 3 CORES.\nBRING BACK DAWN.",
+          "D-PAD: MOVE\nB: STATUS\nA: CLOSE TEXT"
+        ],
+        "closeButton": "a",
+        "speedIn": 0,
+        "speedOut": 0
+      }
+    },
+    {
+      "id": "48f22cc2-6bec-4088-a4d9-743b055f561a",
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "                    ",
+        "x": 0,
+        "y": 0,
+        "location": "background"
+      }
+    },
+    {
+      "id": "057d7fd1-aaf6-4ed3-bceb-90c2183fa309",
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "HP:$00$   CORE:$01$/3",
+        "x": 1,
+        "y": 0,
+        "location": "background"
+      }
+    },
+    {
+      "id": "d4bcd60c-13e5-44e3-9f5b-dc210601e350",
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "                    ",
+        "x": 0,
+        "y": 0,
+        "location": "background"
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000025",
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "HP:$00$   CORE:$01$/3",
+        "x": 1,
+        "y": 0,
+        "location": "background"
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f29+0012+0f2+0012+0f2+00b+0f2+005+0f2+00b+0f2+005+0f2+00b+0f2+005+0f2+00!0f2+002+0f4+009+0f2+00!0f2+002+0f4+009+0f2+00!0f2+002+0f4+009+0f2+005+0f4+009+0f2+005+0f4+009+0f2+005+0f4+009+0f2+005+0f4+009+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

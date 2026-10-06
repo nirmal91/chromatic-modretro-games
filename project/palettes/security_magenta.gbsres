@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "midnight-pink",
+  "name": "Security magenta",
+  "colors": [
+    "FFE0EF",
+    "FF6098",
+    "8C305F",
+    "100C28"
+  ],
+  "defaultName": "Security magenta",
+  "defaultColors": [
+    "FFE0EF",
+    "FF6098",
+    "8C305F",
+    "100C28"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d418ab10-1000-4000-8000-000000000004",
+  "name": "Midnight archive",
+  "symbol": "bg_midnight_archive",
+  "tileColors": "007b+032+004+032+004+032+006+032+004+032+004+032+006f+014+0058+",
+  "filename": "archive.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}

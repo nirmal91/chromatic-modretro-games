@@ -1,0 +1,139 @@
+{
+  "_resourceType": "scene",
+  "id": "d418ab20-1000-4000-8000-000000000003",
+  "_index": 2,
+  "type": "TOPDOWN",
+  "name": "RELAY",
+  "symbol": "scene_relay",
+  "x": 480,
+  "y": 0,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "d418ab10-1000-4000-8000-000000000003",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "midnight-blue",
+    "midnight-pink",
+    "midnight-gold",
+    "midnight-violet",
+    "midnight-dim",
+    "default-bg-6",
+    "dmg",
+    "default-ui"
+  ],
+  "spritePaletteIds": [
+    "midnight-player"
+  ],
+  "autoFadeSpeed": 2,
+  "script": [
+    {
+      "id": "d418ab30-1000-4000-8000-000000000050",
+      "command": "EVENT_TIMER_DISABLE",
+      "args": {
+        "timer": 1
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000051",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "8",
+        "value": {
+          "type": "number",
+          "value": 2
+        }
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000052",
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "player"
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000053",
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 1
+      }
+    },
+    {
+      "id": "13118304-b8bb-4d00-b875-03ef641b7a01",
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "                    ",
+        "x": 0,
+        "y": 0,
+        "location": "background"
+      }
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 2
+      },
+      "id": "514dbe1a-9eaf-56ff-9cfb-a70355abc806"
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000054",
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "HP:$00$   CORE:$01$/3",
+        "x": 1,
+        "y": 0,
+        "location": "background"
+      }
+    },
+    {
+      "id": "d418ab30-1000-4000-8000-000000000056",
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b"
+        ],
+        "override": true
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000055",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "RELAY\nConsole: bottom\nright. Cut grid.",
+              "closeButton": "a",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "f2f1fd2e-3b1d-4382-b49c-caab71e35c3b",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "                    ",
+              "x": 0,
+              "y": 0,
+              "location": "background"
+            }
+          },
+          {
+            "id": "0d8b7243-fef5-4822-b02e-5dcc36db36cc",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "HP:$00$   CORE:$01$/3",
+              "x": 1,
+              "y": 0,
+              "location": "background"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f29+0012+0f2+0012+0f2+00a+0f2+006+0f2+00a+0f2+006+0f2+00a+0f2+006+0f2+0012+0f2+0012+0f2+0012+0f2+005+0f3+00a+0f2+005+0f3+00a+0f2+005+0f3+00a+0f2+005+0f3+00a+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

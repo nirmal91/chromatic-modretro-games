@@ -1,0 +1,102 @@
+{
+  "_resourceType": "trigger",
+  "id": "6a2e2392-f64a-58eb-955f-68dcc53ac919",
+  "_index": 3,
+  "symbol": "trigger_lift_to_archive",
+  "prefabId": "",
+  "name": "Lift to archive",
+  "x": 9,
+  "y": 3,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "d418ab30-1000-4000-8000-000000000081",
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "1"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000078",
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "d418ab20-1000-4000-8000-000000000004",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "direction": "up",
+              "fadeSpeed": 2
+            }
+          }
+        ],
+        "false": [
+          {
+            "id": "d418ab30-1000-4000-8000-000000000079",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "NEED THE CORE.\nGold. Northeast.",
+              "closeButton": "a",
+              "speedIn": 0,
+              "speedOut": 0
+            }
+          },
+          {
+            "id": "8c3185d6-16c7-482f-8e7f-82ab5fbda01f",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "                    ",
+              "x": 0,
+              "y": 0,
+              "location": "background"
+            }
+          },
+          {
+            "id": "a34f31e3-c62c-4b61-a26c-c99591d7dcef",
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "HP:$00$   CORE:$01$/3",
+              "x": 1,
+              "y": 0,
+              "location": "background"
+            }
+          },
+          {
+            "id": "d418ab30-1000-4000-8000-000000000080",
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              },
+              "units": "tiles"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "leaveScript": []
+}

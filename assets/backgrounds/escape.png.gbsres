@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "d418ab10-1000-4000-8000-000000000005",
+  "name": "Midnight escape",
+  "symbol": "bg_midnight_escape",
+  "tileColors": "0051+01d+0048+01d+003e+01d+006a+",
+  "filename": "escape.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "autoColor": false
+}
