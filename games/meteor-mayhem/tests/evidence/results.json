@@ -1,0 +1,14 @@
+{
+  "rom": "dist/meteor-mayhem.gbc",
+  "sha256": "3577e60c7902da4817c42eb54553b97a3f1eedfd1ae513c69ff418b8315ae487",
+  "checks": [
+    "title rendered",
+    "Start enters gameplay with HUD",
+    "D-pad moves ship",
+    "B dash moves faster and enters cooldown",
+    "A fires genuine laser sprites",
+    "Kills award score and three waves lead to boss",
+    "Final boss defeated and victory shown"
+  ],
+  "status": "passed"
+}

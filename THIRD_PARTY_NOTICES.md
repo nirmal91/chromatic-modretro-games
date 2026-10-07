@@ -1,9 +1,7 @@
 # Third-party notices
 
-- The original courier sprite (`assets/sprites/workshop_player.png`), Bench Mono font, UI assets, and starter example artwork come from the ModRetro Chromatic plugin by Eric Provencher, under MIT. See `licenses/ModRetro-plugin-MIT.txt`.
-- Native starter project-format metadata retains Chris Maltby's MIT notice in `licenses/GB-Studio-starter-MIT.txt`.
-- The built cartridge includes the GBVM runtime by Toxa, under MIT; see `licenses/GBVM-MIT.txt`.
-- The cartridge links GBDK runtime components, under GPL version 2 with an express linking exception; see `licenses/GBDK-GPL-2.0-linking-exception.txt`.
-- PyBoy is a separately installed test dependency under LGPL-3.0-only. This repository does not redistribute PyBoy, GB Studio, the compiler toolchain, or a proprietary boot ROM.
+- The browser player uses GB Studio's fork of **binjgb**, derived from Ben Smith's original. Its MIT notice is retained at [`docs/shared/js/README.md`](docs/shared/js/README.md). The bundled browser JavaScript, WebAssembly, and CSS come from a GB Studio 4.3.2 web export.
+- The Meteor Mayhem ROM links the **GBDK** runtime, licensed under GPL 2.0 with an express linking exception. The notice is retained at [`games/midnight-courier/licenses/GBDK-GPL-2.0-linking-exception.txt`](games/midnight-courier/licenses/GBDK-GPL-2.0-linking-exception.txt).
+- Midnight Courier's own third-party notices are in [`games/midnight-courier/THIRD_PARTY_NOTICES.md`](games/midnight-courier/THIRD_PARTY_NOTICES.md).
 
-New game content is covered by the root MIT license. The retained notices above continue to govern their respective components.
+All new game art, gameplay code, collection pages, and tooling in this repository were created for this project.

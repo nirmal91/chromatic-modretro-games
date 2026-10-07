@@ -13,9 +13,10 @@ jobs:
         with:
           python-version: '3.13'
           cache: pip
-          cache-dependency-path: tests/requirements.txt
-      - run: python -m pip install -r tests/requirements.txt
-      - run: python tests/playtest.py
+          cache-dependency-path: games/midnight-courier/tests/requirements.txt
+      - run: python -m pip install -r games/midnight-courier/tests/requirements.txt
+      - run: python games/midnight-courier/tests/playtest.py
+      - run: python games/meteor-mayhem/tests/playtest.py
         env:
           SDL_VIDEODRIVER: dummy
           SDL_AUDIODRIVER: dummy
@@ -23,4 +24,6 @@ jobs:
         if: always()
         with:
           name: playtest-evidence
-          path: test-results/
+          path: |
+            games/midnight-courier/test-results/
+            games/meteor-mayhem/tests/evidence/

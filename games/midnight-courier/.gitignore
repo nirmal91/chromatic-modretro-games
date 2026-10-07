@@ -1,0 +1,11 @@
+.DS_Store
+build/
+artifacts/
+save-states/
+test-results/
+__pycache__/
+.venv/
+*.sav
+*.ram
+*.rtc
+*.state
