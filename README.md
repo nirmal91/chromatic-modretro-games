@@ -20,7 +20,7 @@ Midnight Courier's build and regression instructions are in [its README](games/m
 
 ## Embed the games on another site
 
-`docs/` is a small self-contained static site. Copy the whole directory under a site's public path, such as `public/games/`, to serve the collection at `/games/`. Its links and emulator assets use relative paths, so the games also work under another prefix. Serve `/games/` from `public/games/index.html` and each `/games/play/<slug>/` from its `index.html`; framework hosts may need explicit rewrites for those clean URLs.
+`docs/` is a small self-contained static site. Copy the whole directory under a site's public path, such as `public/games/`, to serve the collection at `/games/index.html`. Its links and emulator assets use relative paths and explicit `index.html` targets, so the games also work under another prefix without framework rewrites. A host may add clean-URL redirects if desired.
 
 After rebuilding a ROM, run `python3 tools/sync_site.py`. This updates each browser ROM and [the game manifest](docs/games-manifest.json), including exact ROM SHA-256 hashes. A host copying this site can validate the manifest before publishing, so its playable ROMs stay in sync with this repository. The original GitHub Pages site continues to use the same `docs/` source.
 
