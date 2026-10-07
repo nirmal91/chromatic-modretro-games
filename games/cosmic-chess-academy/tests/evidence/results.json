@@ -1,0 +1,16 @@
+{
+  "rom": "dist/cosmic-chess-academy.gbc",
+  "sha256": "6331940e787a1f950f73f9de9efe5e5794080495f21cdb8d23824ff2cfc84f7f",
+  "checks": [
+    "title boots",
+    "rook lesson loads on 8x8 board",
+    "rook cannot cross friendly blocker",
+    "B explains highlighted legal destinations",
+    "rook travels along rank to beacon",
+    "bishop captures on an open diagonal",
+    "knight jumps two plus one over pieces",
+    "three missions lead to graduation",
+    "graduation replay resets to lesson one"
+  ],
+  "status": "passed"
+}

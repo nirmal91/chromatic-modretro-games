@@ -7,6 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 GAMES = {
+    "cosmic-chess-academy": "Cosmic Chess Academy",
     "meteor-mayhem": "Meteor Mayhem",
     "midnight-courier": "Midnight Courier",
 }
