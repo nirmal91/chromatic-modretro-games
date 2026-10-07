@@ -19,7 +19,7 @@ h1 span { color:var(--mint); }
 .chess img { border-color:#438397; }
 .tag { color:var(--pink); font-size:11px; }
 .courier .tag { color:#d4a4ee; }
-.chess .tag { color:#81f4dd; }
+.chess .tag { color:#ffb2c1; }
 h2 { font-size:clamp(28px,4vw,46px); letter-spacing:-.04em; margin:12px 0; }
 .game p { max-width:530px; color:var(--muted); font-size:17px; line-height:1.55; }
 .actions { display:flex; flex-wrap:wrap; align-items:center; gap:16px; margin:25px 0 18px; }

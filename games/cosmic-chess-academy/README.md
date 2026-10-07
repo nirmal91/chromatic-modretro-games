@@ -1,4 +1,4 @@
-# Cosmic Chess Academy (work in progress)
+# Cosmic Chess Academy (incomplete prototype)
 
 A playable teaching prototype for Game Boy Color. DOT, a ship computer, guides three short chess movement missions on an 8×8 board: rook, bishop, and knight. Moves use standard chess movement patterns, including a rook's blocked path, a bishop's diagonal capture, and a knight's jump. The first three lessons deliberately omit check, castling, promotion, and opponent turns; those are planned for later missions after we shape the teaching style together.
 
