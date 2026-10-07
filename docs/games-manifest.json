@@ -2,15 +2,9 @@
   "version": 1,
   "games": [
     {
-      "slug": "cosmic-chess-academy",
-      "title": "Cosmic Chess Academy",
-      "playPath": "play/cosmic-chess-academy/index.html",
-      "romPath": "play/cosmic-chess-academy/rom/cosmic-chess-academy.gbc",
-      "sha256": "6331940e787a1f950f73f9de9efe5e5794080495f21cdb8d23824ff2cfc84f7f"
-    },
-    {
       "slug": "meteor-mayhem",
       "title": "Meteor Mayhem",
+      "status": "ready",
       "playPath": "play/meteor-mayhem/index.html",
       "romPath": "play/meteor-mayhem/rom/meteor-mayhem.gbc",
       "sha256": "3577e60c7902da4817c42eb54553b97a3f1eedfd1ae513c69ff418b8315ae487"
@@ -18,9 +12,18 @@
     {
       "slug": "midnight-courier",
       "title": "Midnight Courier",
+      "status": "ready",
       "playPath": "play/midnight-courier/index.html",
       "romPath": "play/midnight-courier/rom/midnight-courier.gbc",
       "sha256": "e4db6de38cb6bdc27e61bf8aac6a0b8b8cbde4cc9c81e25dce794a5f6ec9e7fa"
+    },
+    {
+      "slug": "cosmic-chess-academy",
+      "title": "Cosmic Chess Academy",
+      "status": "incomplete",
+      "playPath": "play/cosmic-chess-academy/index.html",
+      "romPath": "play/cosmic-chess-academy/rom/cosmic-chess-academy.gbc",
+      "sha256": "6331940e787a1f950f73f9de9efe5e5794080495f21cdb8d23824ff2cfc84f7f"
     }
   ]
 }

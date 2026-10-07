@@ -7,9 +7,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 GAMES = {
-    "cosmic-chess-academy": "Cosmic Chess Academy",
     "meteor-mayhem": "Meteor Mayhem",
     "midnight-courier": "Midnight Courier",
+    "cosmic-chess-academy": "Cosmic Chess Academy",
 }
 manifest = {"version": 1, "games": []}
 
@@ -41,6 +41,7 @@ for slug, title in GAMES.items():
     manifest["games"].append({
         "slug": slug,
         "title": title,
+        "status": "incomplete" if slug == "cosmic-chess-academy" else "ready",
         "playPath": f"play/{slug}/index.html",
         "romPath": f"play/{slug}/rom/{slug}.gbc",
         "sha256": digest,
