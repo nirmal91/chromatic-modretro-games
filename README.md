@@ -18,6 +18,12 @@ From the repository root, run `python3 games/meteor-mayhem/tools/make_art.py`, t
 
 Midnight Courier's build and regression instructions are in [its README](games/midnight-courier/README.md). The browser site lives in `docs/` for GitHub Pages; run `python3 tools/sync_site.py` after rebuilding a ROM.
 
+## Embed the games on another site
+
+`docs/` is a small self-contained static site. Copy the whole directory under a site's public path, such as `public/games/`, to serve the collection at `/games/`. Its links and emulator assets use relative paths, so the games also work under another prefix. Serve `/games/` from `public/games/index.html` and each `/games/play/<slug>/` from its `index.html`; framework hosts may need explicit rewrites for those clean URLs.
+
+After rebuilding a ROM, run `python3 tools/sync_site.py`. This updates each browser ROM and [the game manifest](docs/games-manifest.json), including exact ROM SHA-256 hashes. A host copying this site can validate the manifest before publishing, so its playable ROMs stay in sync with this repository. The original GitHub Pages site continues to use the same `docs/` source.
+
 To load a ROM onto a Chromatic, use a compatible writable cartridge and the official ModRetro developer workflow. Writing replaces that cartridge's existing game data.
 
 ## Rights

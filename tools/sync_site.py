@@ -11,6 +11,7 @@ GAMES = {
     "meteor-mayhem": "Meteor Mayhem",
     "midnight-courier": "Midnight Courier",
 }
+manifest = {"version": 1, "games": []}
 
 for slug, title in GAMES.items():
     source = ROOT / "games" / slug / "dist" / f"{slug}.gbc"
@@ -37,4 +38,13 @@ for slug, title in GAMES.items():
     }
     (target.parent.parent / "gbstudio.json").write_text(json.dumps(config, indent=2) + "\n")
     digest = hashlib.sha256(source.read_bytes()).hexdigest()
+    manifest["games"].append({
+        "slug": slug,
+        "title": title,
+        "playPath": f"play/{slug}/index.html",
+        "romPath": f"play/{slug}/rom/{slug}.gbc",
+        "sha256": digest,
+    })
     print(f"{title}: {source.stat().st_size} bytes, SHA-256 {digest}")
+
+(ROOT / "docs" / "games-manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
