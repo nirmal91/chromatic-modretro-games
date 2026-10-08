@@ -24,6 +24,38 @@
       "playPath": "play/cosmic-chess-academy/index.html",
       "romPath": "play/cosmic-chess-academy/rom/cosmic-chess-academy.gbc",
       "sha256": "6331940e787a1f950f73f9de9efe5e5794080495f21cdb8d23824ff2cfc84f7f"
+    },
+    {
+      "slug": "pocket-jumper",
+      "title": "Pocket Jumper",
+      "status": "ready",
+      "playPath": "play/pocket-jumper/index.html",
+      "romPath": "play/pocket-jumper/rom/pocket-jumper.gbc",
+      "sha256": "9b9daa83e43624c915bc433b33cbcbd06857b1cca39f1c88b0c37146cab02f23"
+    },
+    {
+      "slug": "pocket-blocks",
+      "title": "Pocket Blocks",
+      "status": "ready",
+      "playPath": "play/pocket-blocks/index.html",
+      "romPath": "play/pocket-blocks/rom/pocket-blocks.gbc",
+      "sha256": "68fb91008df53f204f87d028015d4526132fa6a3fe6551f56683f7f875fdb4c9"
+    },
+    {
+      "slug": "pocket-snake",
+      "title": "Pocket Snake",
+      "status": "ready",
+      "playPath": "play/pocket-snake/index.html",
+      "romPath": "play/pocket-snake/rom/pocket-snake.gbc",
+      "sha256": "2de5b922dab799ef12653edca9c3d7ed7f4f6a6303c54914be53841badb06c2f"
+    },
+    {
+      "slug": "water-rings",
+      "title": "Water Rings",
+      "status": "ready",
+      "playPath": "play/water-rings/index.html",
+      "romPath": "play/water-rings/rom/water-rings.gbc",
+      "sha256": "8132d4ac2c893e3d6e87a8ec101421ea6423dd11a24264c35104ee1f33adc0de"
     }
   ]
 }

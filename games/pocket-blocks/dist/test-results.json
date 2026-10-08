@@ -1,0 +1,18 @@
+{
+  "rom": "pocket-blocks.gbc",
+  "mode": "CGB",
+  "checks": [
+    "Title and Start enter live 10x16 game",
+    "Left moves live piece",
+    "Right moves live piece",
+    "A rotates live piece",
+    "B rotates counterclockwise",
+    "Soft drop advances piece and awards score",
+    "Pause freezes gravity",
+    "Hard drop locks piece and awards score",
+    "Prepared four-line clear awards 800 points and advances level at ten lines",
+    "Blocked spawn shows game over",
+    "Start restarts and resets score/lines"
+  ],
+  "board_fixtures": "Line clear and top-out use explicitly prepared WRAM; movement, pause, rotations and drops use buttons."
+}
