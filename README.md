@@ -4,8 +4,14 @@ Original Game Boy Color games, built for ModRetro Chromatic and playable in a br
 
 **[Play the games](https://nirmal91.github.io/chromatic-modretro-games/)** · [Download ROMs](https://github.com/nirmal91/chromatic-modretro-games/releases)
 
+[Download the four classics-inspired ROMs as a ZIP](https://nirmal91.github.io/chromatic-modretro-games/classic-roms.zip): Pocket Jumper, Pocket Blocks, Pocket Snake, and Water Rings. Unzip and choose a `.gbc` file for your compatible writable cartridge. Controls are included. These builds have been tested in emulators; physical Chromatic play is still unverified.
+
 | Game | What it is | Play | ROM / source |
 | --- | --- | --- | --- |
+| **Pocket Jumper** | Leap across gaps, collect coins, bounce on critters, and reach the flag. | [Play now](https://nirmal91.github.io/chromatic-modretro-games/play/pocket-jumper/) | [ROM](games/pocket-jumper/dist/pocket-jumper.gbc) · [source](games/pocket-jumper/) |
+| **Pocket Blocks** | Stack seven shapes, clear rows, and keep up as the blocks fall faster. | [Play now](https://nirmal91.github.io/chromatic-modretro-games/play/pocket-blocks/) | [ROM](games/pocket-blocks/dist/pocket-blocks.gbc) · [source](games/pocket-blocks/) |
+| **Pocket Snake** | Grow through a pocket garden. Eat fruit, pick up speed, and avoid your own tail. | [Play now](https://nirmal91.github.io/chromatic-modretro-games/play/pocket-snake/) | [ROM](games/pocket-snake/dist/pocket-snake.gbc) · [source](games/pocket-snake/) |
+| **Water Rings** | Pump two water jets, float eight rings, then let them settle onto the pegs. | [Play now](https://nirmal91.github.io/chromatic-modretro-games/play/water-rings/) | [ROM](games/water-rings/dist/water-rings.gbc) · [source](games/water-rings/) |
 | **Meteor Mayhem** | A fast arcade shooter: dodge incoming rocks, blast drones, chain kills, dash through danger, and defeat the final boss. | [Play now](https://nirmal91.github.io/chromatic-modretro-games/play/meteor-mayhem/) | [ROM](games/meteor-mayhem/dist/meteor-mayhem.gbc) · [source](games/meteor-mayhem/) |
 | **Cargo Crush** | Shove heavy cargo through a drifting depot. Pin the hunter drones, fire a pulse when cornered, and survive three rounds. | [Play now](https://nirmal91.github.io/chromatic-modretro-games/play/cargo-crush/) | [ROM](games/cargo-crush/dist/cargo-crush.gbc) · [source](games/arcade-five/) |
 | **Storm Riders** | Flap through a nebula, steal the high ground, and dive onto rival riders across three escalating waves. | [Play now](https://nirmal91.github.io/chromatic-modretro-games/play/storm-riders/) | [ROM](games/storm-riders/dist/storm-riders.gbc) · [source](games/arcade-five/) |
@@ -20,6 +26,8 @@ All eight ROMs are original homebrew. Cosmic Chess Academy and Meteor Mayhem are
 ## Build and verify
 
 From the repository root, run `python3 games/meteor-mayhem/tools/make_art.py`, then `cd games/meteor-mayhem && make`. The Makefile uses `GBDK_HOME` or the installed ModRetro managed toolchain. The result is `games/meteor-mayhem/dist/meteor-mayhem.gbc`. Cosmic Chess Academy builds the same way using [its Makefile](games/cosmic-chess-academy/Makefile). The five arcade games build together with `make -C games/arcade-five`; their shared original source, art generator, controls, and playtest are in [the arcade folder](games/arcade-five/).
+
+Build any of the four new games with `make -C games/<slug> GBDK_HOME=/path/to/gbdk`. Their READMEs describe repeatable emulator checks and retained runtime screenshots.
 
 Midnight Courier's build and regression instructions are in [its README](games/midnight-courier/README.md). The browser site lives in `docs/` for GitHub Pages; run `python3 tools/sync_site.py` after rebuilding a ROM.
 

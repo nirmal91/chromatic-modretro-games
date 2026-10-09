@@ -3,6 +3,7 @@
 import hashlib
 import json
 import shutil
+import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -15,6 +16,10 @@ GAMES = {
     "airlock-alert": "Airlock Alert",
     "midnight-courier": "Midnight Courier",
     "cosmic-chess-academy": "Cosmic Chess Academy",
+    "pocket-jumper": "Pocket Jumper",
+    "pocket-blocks": "Pocket Blocks",
+    "pocket-snake": "Pocket Snake",
+    "water-rings": "Water Rings",
 }
 manifest = {"version": 1, "games": []}
 
@@ -54,3 +59,16 @@ for slug, title in GAMES.items():
     print(f"{title}: {source.stat().st_size} bytes, SHA-256 {digest}")
 
 (ROOT / "docs" / "games-manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
+
+CLASSICS = ["pocket-jumper", "pocket-blocks", "pocket-snake", "water-rings"]
+with zipfile.ZipFile(ROOT / "docs" / "classic-roms.zip", "w", zipfile.ZIP_DEFLATED) as bundle:
+    for slug in CLASSICS:
+        for source, name in [
+            (ROOT / "games" / slug / "dist" / f"{slug}.gbc", f"{slug}.gbc"),
+            (ROOT / "games" / slug / "README.md", f"{slug}-README.md"),
+        ]:
+            info = zipfile.ZipInfo(name)
+            info.compress_type = zipfile.ZIP_DEFLATED
+            bundle.writestr(info, source.read_bytes())
+    bundle.writestr(zipfile.ZipInfo("LICENSE"), (ROOT / "LICENSE").read_bytes())
+print("Created docs/classic-roms.zip with four ROMs and their controls/build notes")

@@ -1,0 +1,12 @@
+{
+  "rom": "dist/water-rings.gbc",
+  "sha256": "8132d4ac2c893e3d6e87a8ec101421ea6423dd11a24264c35104ee1f33adc0de",
+  "method": "Built GBDK cartridge executed directly in headless PyBoy; only button input used",
+  "checks": [
+    "A jet visibly raises rings; Start pause freezes physics and timer",
+    "Natural input lands four rings on each peg and enters stable win state",
+    "Select resets during play; Start restarts after winning",
+    "Forced monochrome DMG boot/title/start and jet movement verified"
+  ],
+  "limits": "No physical device, browser emulator, audio or long-term save testing"
+}

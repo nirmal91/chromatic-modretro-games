@@ -9,3 +9,6 @@ test-results/
 games/meteor-mayhem/dist/*.map
 games/meteor-mayhem/dist/*.noi
 games/meteor-mayhem/dist/*.sym
+games/*/dist/*.map
+games/*/dist/*.noi
+games/*/dist/*.sym
