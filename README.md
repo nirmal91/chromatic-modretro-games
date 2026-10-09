@@ -7,14 +7,19 @@ Original Game Boy Color games, built for ModRetro Chromatic and playable in a br
 | Game | What it is | Play | ROM / source |
 | --- | --- | --- | --- |
 | **Meteor Mayhem** | A fast arcade shooter: dodge incoming rocks, blast drones, chain kills, dash through danger, and defeat the final boss. | [Play now](https://nirmal91.github.io/chromatic-modretro-games/play/meteor-mayhem/) | [ROM](games/meteor-mayhem/dist/meteor-mayhem.gbc) · [source](games/meteor-mayhem/) |
+| **Cargo Crush** | Shove heavy cargo through a drifting depot. Pin the hunter drones, fire a pulse when cornered, and survive three rounds. | [Play now](https://nirmal91.github.io/chromatic-modretro-games/play/cargo-crush/) | [ROM](games/cargo-crush/dist/cargo-crush.gbc) · [source](games/arcade-five/) |
+| **Storm Riders** | Flap through a nebula, steal the high ground, and dive onto rival riders across three escalating waves. | [Play now](https://nirmal91.github.io/chromatic-modretro-games/play/storm-riders/) | [ROM](games/storm-riders/dist/storm-riders.gbc) · [source](games/arcade-five/) |
+| **Parcel Panic** | Run a four-lane space counter. Launch parcels, catch the returns, and keep customers from reaching your dock. | [Play now](https://nirmal91.github.io/chromatic-modretro-games/play/parcel-panic/) | [ROM](games/parcel-panic/dist/parcel-panic.gbc) · [source](games/arcade-five/) |
+| **Lost Drones** | Collect little lost drones into a moving convoy and guide them through pursuers to the glowing gate. | [Play now](https://nirmal91.github.io/chromatic-modretro-games/play/lost-drones/) | [ROM](games/lost-drones/dist/lost-drones.gbc) · [source](games/arcade-five/) |
+| **Airlock Alert** | Guard three airlocks. Identify raiders, spare friendly arrivals, and clear each shift before your station falls. | [Play now](https://nirmal91.github.io/chromatic-modretro-games/play/airlock-alert/) | [ROM](games/airlock-alert/dist/airlock-alert.gbc) · [source](games/arcade-five/) |
 | **Midnight Courier** | A short neon heist with four sectors, three cores, a cipher, and a timed getaway. | [Play now](https://nirmal91.github.io/chromatic-modretro-games/play/midnight-courier/) | [ROM](games/midnight-courier/dist/midnight-courier.gbc) · [source](games/midnight-courier/) |
 | **Cosmic Chess Academy (incomplete)** | An unfinished three-mission prototype for rook, bishop, and knight movement. It is not a complete chess game. | [Try prototype](https://nirmal91.github.io/chromatic-modretro-games/play/cosmic-chess-academy/) | [ROM](games/cosmic-chess-academy/dist/cosmic-chess-academy.gbc) · [source](games/cosmic-chess-academy/) |
 
-All three ROMs are original homebrew. Cosmic Chess Academy and Meteor Mayhem are 32 KiB, GBC-only ROMs made in C with GBDK. Midnight Courier is a 128 KiB, GBC-only GB Studio project; its editable scenes and test suite remain together in its folder.
+All eight ROMs are original homebrew. Cosmic Chess Academy and Meteor Mayhem are 32 KiB, GBC-only ROMs made in C with GBDK. Midnight Courier is a 128 KiB, GBC-only GB Studio project; its editable scenes and test suite remain together in its folder.
 
 ## Build and verify
 
-From the repository root, run `python3 games/meteor-mayhem/tools/make_art.py`, then `cd games/meteor-mayhem && make`. The Makefile uses `GBDK_HOME` or the installed ModRetro managed toolchain. The result is `games/meteor-mayhem/dist/meteor-mayhem.gbc`. Cosmic Chess Academy builds the same way using [its Makefile](games/cosmic-chess-academy/Makefile).
+From the repository root, run `python3 games/meteor-mayhem/tools/make_art.py`, then `cd games/meteor-mayhem && make`. The Makefile uses `GBDK_HOME` or the installed ModRetro managed toolchain. The result is `games/meteor-mayhem/dist/meteor-mayhem.gbc`. Cosmic Chess Academy builds the same way using [its Makefile](games/cosmic-chess-academy/Makefile). The five arcade games build together with `make -C games/arcade-five`; their shared original source, art generator, controls, and playtest are in [the arcade folder](games/arcade-five/).
 
 Midnight Courier's build and regression instructions are in [its README](games/midnight-courier/README.md). The browser site lives in `docs/` for GitHub Pages; run `python3 tools/sync_site.py` after rebuilding a ROM.
 

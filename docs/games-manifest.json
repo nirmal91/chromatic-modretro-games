@@ -10,6 +10,46 @@
       "sha256": "3577e60c7902da4817c42eb54553b97a3f1eedfd1ae513c69ff418b8315ae487"
     },
     {
+      "slug": "cargo-crush",
+      "title": "Cargo Crush",
+      "status": "ready",
+      "playPath": "play/cargo-crush/index.html",
+      "romPath": "play/cargo-crush/rom/cargo-crush.gbc",
+      "sha256": "78a737813cc07a9ddc4cf6898e935047da39cdb62073332f599ecc8908db0eed"
+    },
+    {
+      "slug": "storm-riders",
+      "title": "Storm Riders",
+      "status": "ready",
+      "playPath": "play/storm-riders/index.html",
+      "romPath": "play/storm-riders/rom/storm-riders.gbc",
+      "sha256": "a8de24aaead15c4809923f74c6659c53871e6b10032c56944b5f8c5559c5d027"
+    },
+    {
+      "slug": "parcel-panic",
+      "title": "Parcel Panic",
+      "status": "ready",
+      "playPath": "play/parcel-panic/index.html",
+      "romPath": "play/parcel-panic/rom/parcel-panic.gbc",
+      "sha256": "55139db19b789ea4af1ee8d0d84cf7cfd891106b13dfda33f86a1fcd2b42a97d"
+    },
+    {
+      "slug": "lost-drones",
+      "title": "Lost Drones",
+      "status": "ready",
+      "playPath": "play/lost-drones/index.html",
+      "romPath": "play/lost-drones/rom/lost-drones.gbc",
+      "sha256": "b4e3e26aefc9fe81530288934c59cac74bd5eb6d8f4e5be3f0be87a5a7b6f0d4"
+    },
+    {
+      "slug": "airlock-alert",
+      "title": "Airlock Alert",
+      "status": "ready",
+      "playPath": "play/airlock-alert/index.html",
+      "romPath": "play/airlock-alert/rom/airlock-alert.gbc",
+      "sha256": "e60aa97af65c95323af54c619f265761ddde0abe028bbfcbfd94505496688df4"
+    },
+    {
       "slug": "midnight-courier",
       "title": "Midnight Courier",
       "status": "ready",

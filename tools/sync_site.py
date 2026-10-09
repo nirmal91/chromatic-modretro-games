@@ -8,6 +8,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 GAMES = {
     "meteor-mayhem": "Meteor Mayhem",
+    "cargo-crush": "Cargo Crush",
+    "storm-riders": "Storm Riders",
+    "parcel-panic": "Parcel Panic",
+    "lost-drones": "Lost Drones",
+    "airlock-alert": "Airlock Alert",
     "midnight-courier": "Midnight Courier",
     "cosmic-chess-academy": "Cosmic Chess Academy",
 }

@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "rom": "rom/cargo-crush.gbc",
+  "project": {
+    "name": "Cargo Crush",
+    "author": "Nirmal Utwani"
+  },
+  "colorCorrection": "default",
+  "customControls": {
+    "up": [
+      "ArrowUp",
+      "w"
+    ],
+    "down": [
+      "ArrowDown",
+      "s"
+    ],
+    "left": [
+      "ArrowLeft",
+      "a"
+    ],
+    "right": [
+      "ArrowRight",
+      "d"
+    ],
+    "a": [
+      "z",
+      "j"
+    ],
+    "b": [
+      "x",
+      "k"
+    ],
+    "start": [
+      "Enter"
+    ],
+    "select": [
+      "Shift"
+    ]
+  }
+}

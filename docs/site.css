@@ -30,3 +30,9 @@ h2 { font-size:clamp(28px,4vw,46px); letter-spacing:-.04em; margin:12px 0; }
 small { color:#8e9ab6; font-size:10px; line-height:1.8; }
 footer { border-top:1px solid #384463; padding-top:27px; padding-bottom:40px; color:#8e9ab6; font-size:13px; }
 @media(max-width:690px) { .hero { padding-top:48px; } .game { grid-template-columns:1fr; gap:22px; padding:22px; } .game img { max-width:100%; } }
+
+.arcade img { border-color:#315c73; }
+.arcade .tag { color:#8cece7; }
+.storm-riders img,.airlock-alert img { border-color:#734d75; }
+.parcel-panic img { border-color:#9a684a; }
+.lost-drones img { border-color:#4c7965; }
