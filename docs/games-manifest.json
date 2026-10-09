@@ -50,22 +50,6 @@
       "sha256": "e60aa97af65c95323af54c619f265761ddde0abe028bbfcbfd94505496688df4"
     },
     {
-      "slug": "midnight-courier",
-      "title": "Midnight Courier",
-      "status": "ready",
-      "playPath": "play/midnight-courier/index.html",
-      "romPath": "play/midnight-courier/rom/midnight-courier.gbc",
-      "sha256": "e4db6de38cb6bdc27e61bf8aac6a0b8b8cbde4cc9c81e25dce794a5f6ec9e7fa"
-    },
-    {
-      "slug": "cosmic-chess-academy",
-      "title": "Cosmic Chess Academy",
-      "status": "incomplete",
-      "playPath": "play/cosmic-chess-academy/index.html",
-      "romPath": "play/cosmic-chess-academy/rom/cosmic-chess-academy.gbc",
-      "sha256": "6331940e787a1f950f73f9de9efe5e5794080495f21cdb8d23824ff2cfc84f7f"
-    },
-    {
       "slug": "pocket-jumper",
       "title": "Pocket Jumper",
       "status": "ready",
@@ -96,6 +80,22 @@
       "playPath": "play/water-rings/index.html",
       "romPath": "play/water-rings/rom/water-rings.gbc",
       "sha256": "8132d4ac2c893e3d6e87a8ec101421ea6423dd11a24264c35104ee1f33adc0de"
+    },
+    {
+      "slug": "midnight-courier",
+      "title": "Midnight Courier",
+      "status": "ready",
+      "playPath": "play/midnight-courier/index.html",
+      "romPath": "play/midnight-courier/rom/midnight-courier.gbc",
+      "sha256": "e4db6de38cb6bdc27e61bf8aac6a0b8b8cbde4cc9c81e25dce794a5f6ec9e7fa"
+    },
+    {
+      "slug": "cosmic-chess-academy",
+      "title": "Cosmic Chess Academy",
+      "status": "incomplete",
+      "playPath": "play/cosmic-chess-academy/index.html",
+      "romPath": "play/cosmic-chess-academy/rom/cosmic-chess-academy.gbc",
+      "sha256": "6331940e787a1f950f73f9de9efe5e5794080495f21cdb8d23824ff2cfc84f7f"
     }
   ]
 }

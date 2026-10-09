@@ -14,12 +14,12 @@ GAMES = {
     "parcel-panic": "Parcel Panic",
     "lost-drones": "Lost Drones",
     "airlock-alert": "Airlock Alert",
-    "midnight-courier": "Midnight Courier",
-    "cosmic-chess-academy": "Cosmic Chess Academy",
     "pocket-jumper": "Pocket Jumper",
     "pocket-blocks": "Pocket Blocks",
     "pocket-snake": "Pocket Snake",
     "water-rings": "Water Rings",
+    "midnight-courier": "Midnight Courier",
+    "cosmic-chess-academy": "Cosmic Chess Academy",
 }
 manifest = {"version": 1, "games": []}
 
